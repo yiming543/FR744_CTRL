@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\main.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\main.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\main.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\main.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\ccp1.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\ccp1.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\ccp1.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\ccp1.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\device_config.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\device_config.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\device_config.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\device_config.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\interrupt_manager.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\interrupt_manager.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\interrupt_manager.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\interrupt_manager.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\mcc.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\mcc.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\mcc.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\mcc.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\pin_manager.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\pin_manager.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\pin_manager.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\pin_manager.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr0.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr0.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr0.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr0.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr1.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr1.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr1.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr1.c.p1"
+},
+{
+  "directory": "C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default",
+  "command": "c:\\PROGRA~1\\MICROC~1\\xc8\\v2.46\\bin\\xc8-cc.exe -DXPRJ_default=default -D__16F15213__ -D__DEBUG=1 -IC:\\yiming\\work\\FR744-CTRL.X\\cmake\\FR744-CTRL\\default\\..\\..\\.. -c -mcpu=16F15213 -mdfp=C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8 -fno-short-double -fno-short-float -O0 -fasmfile -maddrqual=ignore -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -moscval=0x3400 -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto:auto -o CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr2.c.p1 -c C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr2.c",
+  "file": "C:\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr2.c",
+  "output": "CMakeFiles\\FR744_CTRL_default_default_XC8_compile.dir\\C_\\yiming\\work\\FR744-CTRL.X\\mcc_generated_files\\tmr2.c.p1"
+}
+]

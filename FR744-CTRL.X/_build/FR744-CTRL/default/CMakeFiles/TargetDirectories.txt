@@ -1,0 +1,4 @@
+C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default/CMakeFiles/FR744_CTRL_default_default_XC8_compile.dir
+C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default/CMakeFiles/default.elf.dir
+C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default/CMakeFiles/edit_cache.dir
+C:/yiming/work/FR744-CTRL.X/_build/FR744-CTRL/default/CMakeFiles/rebuild_cache.dir
