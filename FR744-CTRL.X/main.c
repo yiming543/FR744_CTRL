@@ -41,38 +41,47 @@
     SOFTWARE.
 */
 
-//20250704 V01 CS:DB7E
-//輸入信號PWM 200HZ
-//duty > 80 brake 輸出HI,否則輸出LO
-//有任何輸入信號時pos HI,LO > 5ms pos lo,brake lo.
-//PWM 100% 時pos,brake 也要輸出HI
+// 20250704 V01 CS:DB7E
+// 輸入信號PWM 200HZ
+// duty > 80 brake 輸出HI,否則輸出LO
+// 有任何輸入信號時pos HI,LO > 5ms pos lo,brake lo.
+// PWM 100% 時pos,brake 也要輸出HI
+
+// 20250704 V02 CS:37A2
+// 頻率範圍改為200HZ~220HZ
+// duty 80% 時間改成用duty 判斷.
 
 #include "mcc_generated_files/mcc.h"
 #include "mcc_generated_files/pin_manager.h"
+#include <stdbool.h>
 
-#define FREQ_200HZ_CYCLE_TIME_MAX (5250) // 190HZ
-#define FREQ_200HZ_CYCLE_TIME_MIN (4750) // 210HZ
-#define DUTY_80_PERCENT (4000)
+#define FREQ_190HZ (190)
+#define FREQ_220HZ (220)
+#define DUTY_80_PERCENT (80)
 
-//PWM 0%
-void TMR0_EvenHandler(void) 
-{ 
-  Pos_SetLow(); 
+uint32_t PWM_Frequent = 0;
+uint16_t HI_time = 0;
+uint32_t cycle_time = 0;
+uint32_t Duty_PERCENT = 0;
+bool fpluseOK = 0;
+
+// PWM 0%
+void TMR0_EvenHandler(void) {
+  Pos_SetLow();
   Brake_SetLow();
 }
 
-//PWM 100%
-void TMR2_EvenHandler(void){
-    Pos_SetHigh();
-    Brake_SetHigh();
+// PWM 100%
+void TMR2_EvenHandler(void) {
+  Pos_SetHigh();
+  Brake_SetHigh();
 }
 
-
-//PWM 1~99%
+// PWM 1~99%
 static void CCP1_EvenCallBack(uint16_t captured) {
   static uint16_t pluse_width_LO = 0;
   static uint16_t pluse_width_HI = 0;
-  static uint16_t cycle_time = 0;
+  // static uint16_t cycle_us = 0;
   static uint16_t HI_us = 0;
   static uint16_t LO_us = 0;
   static uint16_t falling_edge_time = 0;
@@ -94,14 +103,8 @@ static void CCP1_EvenCallBack(uint16_t captured) {
       LO_us = (pluse_width_LO >> 3);
       HI_us = (pluse_width_HI >> 3);
       cycle_time = HI_us + LO_us;
-      if ((cycle_time > FREQ_200HZ_CYCLE_TIME_MIN) &&
-          (cycle_time < FREQ_200HZ_CYCLE_TIME_MAX)) {
-        if (HI_us > DUTY_80_PERCENT) {
-          Brake_SetHigh();
-        } else {
-          Brake_SetLow();
-        }
-      }
+      HI_time = HI_us;
+      fpluseOK = 1;
     }
 
   }
@@ -148,16 +151,28 @@ void main(void) {
   TMR2_StartTimer();
 
   while (1) {
-    //PWM 100%
-    if(RA5_GetValue()==0)
-    {
+    // PWM 100%
+    if (RA5_GetValue() == 0) {
       TMR2_WriteTimer(0);
-    }
-    else
-    {
+    } else {
       TMR0_WriteTimer(0);
     }
-    
+
+    if (fpluseOK == 1) {
+      fpluseOK = 0;
+      PWM_Frequent = 1000000UL / cycle_time;
+      if ((PWM_Frequent > FREQ_190HZ) && (PWM_Frequent < FREQ_220HZ)) {
+        Duty_PERCENT = (uint32_t)(HI_time * 100UL) / cycle_time;
+        if (Duty_PERCENT >= DUTY_80_PERCENT) {
+          Brake_SetHigh();
+        } else {
+          Brake_SetLow();
+        }
+      }
+      else {
+        Brake_SetLow();
+      }
+    }
   }
 }
 /**

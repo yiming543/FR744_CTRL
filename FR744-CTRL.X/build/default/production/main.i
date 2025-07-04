@@ -7,7 +7,7 @@
 # 1 "C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 50 "main.c"
+# 54 "main.c"
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\\pic\\include\\xc.h" 1 3
@@ -5197,7 +5197,7 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 99 "./mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 50 "main.c" 2
+# 54 "main.c" 2
 
 
 
@@ -5206,24 +5206,29 @@ void WDT_Initialize(void);
 
 
 
-void TMR0_EvenHandler(void)
-{
+uint32_t PWM_Frequent = 0;
+uint16_t HI_time = 0;
+uint32_t cycle_time = 0;
+uint32_t Duty_PERCENT = 0;
+_Bool fpluseOK = 0;
+
+
+void TMR0_EvenHandler(void) {
   do { LATAbits.LATA2 = 0; } while(0);
   do { LATAbits.LATA4 = 0; } while(0);
 }
 
 
-void TMR2_EvenHandler(void){
-    do { LATAbits.LATA2 = 1; } while(0);
-    do { LATAbits.LATA4 = 1; } while(0);
+void TMR2_EvenHandler(void) {
+  do { LATAbits.LATA2 = 1; } while(0);
+  do { LATAbits.LATA4 = 1; } while(0);
 }
-
 
 
 static void CCP1_EvenCallBack(uint16_t captured) {
   static uint16_t pluse_width_LO = 0;
   static uint16_t pluse_width_HI = 0;
-  static uint16_t cycle_time = 0;
+
   static uint16_t HI_us = 0;
   static uint16_t LO_us = 0;
   static uint16_t falling_edge_time = 0;
@@ -5245,14 +5250,8 @@ static void CCP1_EvenCallBack(uint16_t captured) {
       LO_us = (pluse_width_LO >> 3);
       HI_us = (pluse_width_HI >> 3);
       cycle_time = HI_us + LO_us;
-      if ((cycle_time > (4750)) &&
-          (cycle_time < (5250))) {
-        if (HI_us > (4000)) {
-          do { LATAbits.LATA4 = 1; } while(0);
-        } else {
-          do { LATAbits.LATA4 = 0; } while(0);
-        }
-      }
+      HI_time = HI_us;
+      fpluseOK = 1;
     }
 
   }
@@ -5300,14 +5299,26 @@ void main(void) {
 
   while (1) {
 
-    if(PORTAbits.RA5==0)
-    {
+    if (PORTAbits.RA5 == 0) {
       TMR2_WriteTimer(0);
-    }
-    else
-    {
+    } else {
       TMR0_WriteTimer(0);
     }
 
+    if (fpluseOK == 1) {
+      fpluseOK = 0;
+      PWM_Frequent = 1000000UL / cycle_time;
+      if ((PWM_Frequent > (190)) && (PWM_Frequent < (220))) {
+        Duty_PERCENT = (uint32_t)(HI_time * 100UL) / cycle_time;
+        if (Duty_PERCENT >= (80)) {
+          do { LATAbits.LATA4 = 1; } while(0);
+        } else {
+          do { LATAbits.LATA4 = 0; } while(0);
+        }
+      }
+      else {
+        do { LATAbits.LATA4 = 0; } while(0);
+      }
+    }
   }
 }
