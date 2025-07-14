@@ -65,45 +65,45 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set Pos aliases
-#define Pos_TRIS                 TRISAbits.TRISA2
-#define Pos_LAT                  LATAbits.LATA2
-#define Pos_PORT                 PORTAbits.RA2
-#define Pos_WPU                  WPUAbits.WPUA2
-#define Pos_OD                   ODCONAbits.ODCA2
-#define Pos_ANS                  ANSELAbits.ANSA2
-#define Pos_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
-#define Pos_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
-#define Pos_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
-#define Pos_GetValue()           PORTAbits.RA2
-#define Pos_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
-#define Pos_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
-#define Pos_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
-#define Pos_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
-#define Pos_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
-#define Pos_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
-#define Pos_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
-#define Pos_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
-
 // get/set Brake aliases
-#define Brake_TRIS                 TRISAbits.TRISA4
-#define Brake_LAT                  LATAbits.LATA4
-#define Brake_PORT                 PORTAbits.RA4
-#define Brake_WPU                  WPUAbits.WPUA4
-#define Brake_OD                   ODCONAbits.ODCA4
-#define Brake_ANS                  ANSELAbits.ANSA4
-#define Brake_SetHigh()            do { LATAbits.LATA4 = 1; } while(0)
-#define Brake_SetLow()             do { LATAbits.LATA4 = 0; } while(0)
-#define Brake_Toggle()             do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0)
-#define Brake_GetValue()           PORTAbits.RA4
-#define Brake_SetDigitalInput()    do { TRISAbits.TRISA4 = 1; } while(0)
-#define Brake_SetDigitalOutput()   do { TRISAbits.TRISA4 = 0; } while(0)
-#define Brake_SetPullup()          do { WPUAbits.WPUA4 = 1; } while(0)
-#define Brake_ResetPullup()        do { WPUAbits.WPUA4 = 0; } while(0)
-#define Brake_SetPushPull()        do { ODCONAbits.ODCA4 = 0; } while(0)
-#define Brake_SetOpenDrain()       do { ODCONAbits.ODCA4 = 1; } while(0)
-#define Brake_SetAnalogMode()      do { ANSELAbits.ANSA4 = 1; } while(0)
-#define Brake_SetDigitalMode()     do { ANSELAbits.ANSA4 = 0; } while(0)
+#define Brake_TRIS                 TRISAbits.TRISA2
+#define Brake_LAT                  LATAbits.LATA2
+#define Brake_PORT                 PORTAbits.RA2
+#define Brake_WPU                  WPUAbits.WPUA2
+#define Brake_OD                   ODCONAbits.ODCA2
+#define Brake_ANS                  ANSELAbits.ANSA2
+#define Brake_SetHigh()            do { LATAbits.LATA2 = 1; } while(0)
+#define Brake_SetLow()             do { LATAbits.LATA2 = 0; } while(0)
+#define Brake_Toggle()             do { LATAbits.LATA2 = ~LATAbits.LATA2; } while(0)
+#define Brake_GetValue()           PORTAbits.RA2
+#define Brake_SetDigitalInput()    do { TRISAbits.TRISA2 = 1; } while(0)
+#define Brake_SetDigitalOutput()   do { TRISAbits.TRISA2 = 0; } while(0)
+#define Brake_SetPullup()          do { WPUAbits.WPUA2 = 1; } while(0)
+#define Brake_ResetPullup()        do { WPUAbits.WPUA2 = 0; } while(0)
+#define Brake_SetPushPull()        do { ODCONAbits.ODCA2 = 0; } while(0)
+#define Brake_SetOpenDrain()       do { ODCONAbits.ODCA2 = 1; } while(0)
+#define Brake_SetAnalogMode()      do { ANSELAbits.ANSA2 = 1; } while(0)
+#define Brake_SetDigitalMode()     do { ANSELAbits.ANSA2 = 0; } while(0)
+
+// get/set Pos aliases
+#define Pos_TRIS                 TRISAbits.TRISA4
+#define Pos_LAT                  LATAbits.LATA4
+#define Pos_PORT                 PORTAbits.RA4
+#define Pos_WPU                  WPUAbits.WPUA4
+#define Pos_OD                   ODCONAbits.ODCA4
+#define Pos_ANS                  ANSELAbits.ANSA4
+#define Pos_SetHigh()            do { LATAbits.LATA4 = 1; } while(0)
+#define Pos_SetLow()             do { LATAbits.LATA4 = 0; } while(0)
+#define Pos_Toggle()             do { LATAbits.LATA4 = ~LATAbits.LATA4; } while(0)
+#define Pos_GetValue()           PORTAbits.RA4
+#define Pos_SetDigitalInput()    do { TRISAbits.TRISA4 = 1; } while(0)
+#define Pos_SetDigitalOutput()   do { TRISAbits.TRISA4 = 0; } while(0)
+#define Pos_SetPullup()          do { WPUAbits.WPUA4 = 1; } while(0)
+#define Pos_ResetPullup()        do { WPUAbits.WPUA4 = 0; } while(0)
+#define Pos_SetPushPull()        do { ODCONAbits.ODCA4 = 0; } while(0)
+#define Pos_SetOpenDrain()       do { ODCONAbits.ODCA4 = 1; } while(0)
+#define Pos_SetAnalogMode()      do { ANSELAbits.ANSA4 = 1; } while(0)
+#define Pos_SetDigitalMode()     do { ANSELAbits.ANSA4 = 0; } while(0)
 
 // get/set RA5 procedures
 #define RA5_SetHigh()            do { LATAbits.LATA5 = 1; } while(0)

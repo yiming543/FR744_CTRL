@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F15213 ]
 [d frameptr 6 ]
-"96 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"96 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [e E2868 . `uc
 TMR2_ROP_STARTS_TMRON 0
 TMR2_ROP_STARTS_TMRON_ERSHIGH 1
@@ -43,15 +43,15 @@ TMR2_PWM4_OUT 4
 [v ___lmul __lmul `(ul  1 e 4 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"69 C:\yiming\work\FR744-CTRL.X\main.c
+"72 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _TMR0_EvenHandler TMR0_EvenHandler `(v  1 e 1 0 ]
-"75
+"78
 [v _TMR2_EvenHandler TMR2_EvenHandler `(v  1 e 1 0 ]
-"81
+"84
 [v _CCP1_EvenCallBack CCP1_EvenCallBack `(v  1 s 1 CCP1_EvenCallBack ]
-"130
+"133
 [v _main main `(v  1 e 1 0 ]
-"60 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/ccp1.c
+"60 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/ccp1.c
 [v _CCP1_DefaultCallBack CCP1_DefaultCallBack `(v  1 s 1 CCP1_DefaultCallBack ]
 "65
 [v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
@@ -59,17 +59,17 @@ TMR2_PWM4_OUT 4
 [v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
 "107
 [v _CCP1_SetCallBack CCP1_SetCallBack `(v  1 e 1 0 ]
-"52 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/interrupt_manager.c
+"52 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"50 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/mcc.c
+"50 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "62
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "72
 [v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-"55 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/pin_manager.c
+"55 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"61 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"61 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 "109
 [v _TMR0_WriteTimer TMR0_WriteTimer `(v  1 e 1 0 ]
@@ -80,11 +80,11 @@ TMR2_PWM4_OUT 4
 [v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
 "138
 [v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
-"63 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr1.c
+"63 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 "120
 [v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
-"64 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"64 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "108
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -111,7 +111,7 @@ TMR2_PWM4_OUT 4
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"427 C:/Users/nbuser/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f15213.h
+"427 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16f15213.h
 [u S102 . 1 `S97 1 . 1 0 ]
 [v _INTCONbits INTCONbits `VES102  1 e 1 @11 ]
 [s S801 . 1 `uc 1 RA0 1 0 :1:0 
@@ -381,28 +381,28 @@ TMR2_PWM4_OUT 4
 [v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
 "7214
 [v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
-"62 C:\yiming\work\FR744-CTRL.X\main.c
+"65 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _PWM_Frequent PWM_Frequent `ul  1 e 4 0 ]
-"63
-[v _HI_time HI_time `us  1 e 2 0 ]
-"64
-[v _cycle_time cycle_time `ul  1 e 4 0 ]
-"65
-[v _Duty_PERCENT Duty_PERCENT `ul  1 e 4 0 ]
 "66
+[v _HI_time HI_time `us  1 e 2 0 ]
+"67
+[v _cycle_time cycle_time `ul  1 e 4 0 ]
+"68
+[v _Duty_PERCENT Duty_PERCENT `ul  1 e 4 0 ]
+"69
 [v _fpluseOK fpluseOK `a  1 e 1 0 ]
-"54 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/ccp1.c
+"54 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/ccp1.c
 [v _CCP1_CallBack CCP1_CallBack `*.37(v  1 s 2 CCP1_CallBack ]
-"59 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"59 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
-"57 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr1.c
+"57 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr1.c
 [v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
-"58 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"58 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
-"130 C:\yiming\work\FR744-CTRL.X\main.c
+"133 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"177
+"180
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.46\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
@@ -426,7 +426,7 @@ TMR2_PWM4_OUT 4
 [v ___lldiv@dividend dividend `ul  1 p 4 16 ]
 "30
 } 0
-"150 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"150 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [v _TMR2_WriteTimer TMR2_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR2_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]
@@ -454,7 +454,7 @@ TMR2_PWM4_OUT 4
 {
 "112
 } 0
-"109 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"109 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v _TMR0_WriteTimer TMR0_WriteTimer `(v  1 e 1 0 ]
 {
 [v TMR0_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]
@@ -463,7 +463,7 @@ TMR2_PWM4_OUT 4
 [v TMR0_WriteTimer@timerVal timerVal `uc  1 a 1 0 ]
 "113
 } 0
-"50 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/mcc.c
+"50 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "60
@@ -473,7 +473,7 @@ TMR2_PWM4_OUT 4
 {
 "76
 } 0
-"64 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"64 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "94
@@ -484,12 +484,12 @@ TMR2_PWM4_OUT 4
 [v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "180
 } 0
-"63 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr1.c
+"63 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr1.c
 [v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
 {
 "90
 } 0
-"61 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"61 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
 {
 "85
@@ -500,17 +500,17 @@ TMR2_PWM4_OUT 4
 [v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
 "136
 } 0
-"55 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/pin_manager.c
+"55 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "100
 } 0
-"62 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/mcc.c
+"62 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "70
 } 0
-"65 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/ccp1.c
+"65 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/ccp1.c
 [v _CCP1_Initialize CCP1_Initialize `(v  1 e 1 0 ]
 {
 "90
@@ -521,12 +521,12 @@ TMR2_PWM4_OUT 4
 [v CCP1_SetCallBack@customCallBack customCallBack `*.37(v  1 p 2 0 ]
 "109
 } 0
-"52 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/interrupt_manager.c
+"52 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
 "78
 } 0
-"165 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr2.c
+"165 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr2.c
 [v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
 {
 "175
@@ -536,12 +536,12 @@ TMR2_PWM4_OUT 4
 {
 "185
 } 0
-"75 C:\yiming\work\FR744-CTRL.X\main.c
+"78 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _TMR2_EvenHandler TMR2_EvenHandler `(v  1 e 1 0 ]
 {
-"78
+"81
 } 0
-"121 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"121 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
 {
 "131
@@ -551,12 +551,12 @@ TMR2_PWM4_OUT 4
 {
 "141
 } 0
-"69 C:\yiming\work\FR744-CTRL.X\main.c
+"72 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _TMR0_EvenHandler TMR0_EvenHandler `(v  1 e 1 0 ]
 {
-"72
+"75
 } 0
-"92 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/ccp1.c
+"92 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/ccp1.c
 [v _CCP1_CaptureISR CCP1_CaptureISR `(v  1 e 1 0 ]
 {
 [s S474 . 2 `uc 1 ccpr1l 1 0 `uc 1 ccpr1h 1 1 ]
@@ -571,27 +571,27 @@ TMR2_PWM4_OUT 4
 {
 "63
 } 0
-"81 C:\yiming\work\FR744-CTRL.X\main.c
+"84 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\main.c
 [v _CCP1_EvenCallBack CCP1_EvenCallBack `(v  1 s 1 CCP1_EvenCallBack ]
 {
 [v CCP1_EvenCallBack@captured captured `us  1 p 2 1 ]
-"82
-[v CCP1_EvenCallBack@pluse_width_LO pluse_width_LO `us  1 s 2 pluse_width_LO ]
-"83
-[v CCP1_EvenCallBack@pluse_width_HI pluse_width_HI `us  1 s 2 pluse_width_HI ]
 "85
-[v CCP1_EvenCallBack@HI_us HI_us `us  1 s 2 HI_us ]
+[v CCP1_EvenCallBack@pluse_width_LO pluse_width_LO `us  1 s 2 pluse_width_LO ]
 "86
-[v CCP1_EvenCallBack@LO_us LO_us `us  1 s 2 LO_us ]
-"87
-[v CCP1_EvenCallBack@falling_edge_time falling_edge_time `us  1 s 2 falling_edge_time ]
+[v CCP1_EvenCallBack@pluse_width_HI pluse_width_HI `us  1 s 2 pluse_width_HI ]
 "88
-[v CCP1_EvenCallBack@rising_edge_time rising_edge_time `us  1 s 2 rising_edge_time ]
+[v CCP1_EvenCallBack@HI_us HI_us `us  1 s 2 HI_us ]
 "89
+[v CCP1_EvenCallBack@LO_us LO_us `us  1 s 2 LO_us ]
+"90
+[v CCP1_EvenCallBack@falling_edge_time falling_edge_time `us  1 s 2 falling_edge_time ]
+"91
+[v CCP1_EvenCallBack@rising_edge_time rising_edge_time `us  1 s 2 rising_edge_time ]
+"92
 [v CCP1_EvenCallBack@rise_edge_flag rise_edge_flag `a  1 s 1 rise_edge_flag ]
-"125
+"128
 } 0
-"109 C:\yiming\work\FR744-CTRL.X\mcc_generated_files/tmr0.c
+"109 D:\yiming\github\FR744_CTRL\FR744-CTRL.X\mcc_generated_files/tmr0.c
 [v i1_TMR0_WriteTimer TMR0_WriteTimer `(v  1 e 1 0 ]
 {
 [v i1TMR0_WriteTimer@timerVal timerVal `uc  1 a 1 wreg ]

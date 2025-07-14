@@ -466,7 +466,7 @@
          <value>enabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="CCP1PPS%aux0"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="CCP1PPS%aux3"/>
          <value>5</value>
       </entry>
       <entry>
@@ -479,7 +479,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA2"/>
-         <value>Pos</value>
+         <value>Brake</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA3"/>
@@ -487,7 +487,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA4"/>
-         <value>Brake</value>
+         <value>Pos</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="Custom Name RA5"/>
@@ -522,15 +522,15 @@
          <value>disabled</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T0CKIPPS%aux3"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T0CKIPPS%aux2"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T1CKIPPS%aux1"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T1CKIPPS%aux0"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T1GPPS%aux2"/>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Pin Module" name="T1GPPS%aux1"/>
          <value>%DESELECT%</value>
       </entry>
       <entry>
@@ -3021,7 +3021,7 @@
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>b0ff133d0fbd09e345f8d7c93498edfb08f1be8b7015112b4f3563fec1452543</hash>
+         <hash>8ba2aa5f34bc47f6e496608cf9a59406793b2b1276bf8aa15f85f67e22b4ccdb</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
@@ -3044,12 +3044,12 @@
          <hash>68fee7605bf32071594b486d15ab5e777e2011aed4de82149d920df29eead79c</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\tmr2.h</file>
-         <hash>a7627278374f51940921495c2f740781083f50670fd85603d5edb235c5bdb6b0</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\device_config.c</file>
          <hash>fd76a1aa14784d16857c57dc466672f64d3e322ec8cddf3cb6821ff068a66f8b</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tmr2.h</file>
+         <hash>a7627278374f51940921495c2f740781083f50670fd85603d5edb235c5bdb6b0</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr2.c</file>
@@ -3057,7 +3057,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.h</file>
-         <hash>997d4b36454f47bb4c5d65f1f281de6a790f1019493438ea9313aa64ca5ef7d8</hash>
+         <hash>2955a70bac1d01e2cbacb2ed90989e0ad2db7a9eb52fcdaf10fa9768b5ef41f3</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr1.c</file>
@@ -3068,12 +3068,12 @@
          <hash>447f3121f294db1be665aefbc0a6567363165cd92a0502cc344999e4d63bcf13</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\ccp1.h</file>
-         <hash>d61543ccc3a8d1489e29e5c014972ba06377c737ae84cccbf973706bf9910384</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\pin_manager.c</file>
          <hash>943188153c2bcab7342b0c9225d8509644dc98997d18d50343e9878cf1273ba8</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\ccp1.h</file>
+         <hash>d61543ccc3a8d1489e29e5c014972ba06377c737ae84cccbf973706bf9910384</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\ccp1.c</file>

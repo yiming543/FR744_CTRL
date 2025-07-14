@@ -41,15 +41,18 @@
     SOFTWARE.
 */
 
-// 20250704 V01 CS:DB7E
+// 20250704 CS:DB7E V01
 // 輸入信號PWM 200HZ
 // duty > 80 brake 輸出HI,否則輸出LO
 // 有任何輸入信號時pos HI,LO > 5ms pos lo,brake lo.
 // PWM 100% 時pos,brake 也要輸出HI
 
-// 20250704 V02 CS:37A2
+// 20250704 CS:37A2 V02
 // 頻率範圍改為200HZ~220HZ
 // duty 80% 時間改成用duty 判斷.
+
+//20250714 CS:35A2 V03
+//RA2 RA4 互換
 
 #include "mcc_generated_files/mcc.h"
 #include "mcc_generated_files/pin_manager.h"

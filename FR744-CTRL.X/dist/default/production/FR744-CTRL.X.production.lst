@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.46 build 20240104201356 
-                                                                                               Fri Jul 04 13:15:09 2025
+                                                                                               Mon Jul 14 14:18:59 2025
 
 Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1 
      1                           	processor	16F15213
@@ -1647,7 +1647,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1633 ;;
   1634 ;; *************** function _main *****************
   1635 ;; Defined at:
-  1636 ;;		line 130 in file "main.c"
+  1636 ;;		line 133 in file "main.c"
   1637 ;; Parameters:    Size  Location     Type
   1638 ;;		None
   1639 ;; Auto vars:     Size  Location     Type
@@ -1690,10 +1690,10 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1676                           ; Regs used in _main: [wreg+status,2+status,0+pclath+cstack]
   1677                           
   1678                           
-  1679                           ;main.c: 132:   SYSTEM_Initialize();
+  1679                           ;main.c: 135:   SYSTEM_Initialize();
   1680     0044  3182  2234  3180   	fcall	_SYSTEM_Initialize
   1681                           
-  1682                           ;main.c: 133:   TMR0_SetInterruptHandler(TMR0_EvenHandler);
+  1682                           ;main.c: 136:   TMR0_SetInterruptHandler(TMR0_EvenHandler);
   1683     0047  3001               	movlw	low _TMR0_EvenHandler
   1684     0048  0140               	movlb	0	; select bank0
   1685     0049  00A0               	movwf	TMR0_SetInterruptHandler@InterruptHandler
@@ -1701,7 +1701,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1687     004B  00A1               	movwf	TMR0_SetInterruptHandler@InterruptHandler+1
   1688     004C  3182  22E2  3180   	fcall	_TMR0_SetInterruptHandler
   1689                           
-  1690                           ;main.c: 134:   CCP1_SetCallBack(CCP1_EvenCallBack);
+  1690                           ;main.c: 137:   CCP1_SetCallBack(CCP1_EvenCallBack);
   1691     004F  30FC               	movlw	low _CCP1_EvenCallBack
   1692     0050  0140               	movlb	0	; select bank0
   1693     0051  00A0               	movwf	CCP1_SetCallBack@customCallBack
@@ -1709,7 +1709,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1695     0053  00A1               	movwf	CCP1_SetCallBack@customCallBack+1
   1696     0054  3182  22EE  3180   	fcall	_CCP1_SetCallBack
   1697                           
-  1698                           ;main.c: 135:   TMR2_SetInterruptHandler(TMR2_EvenHandler);
+  1698                           ;main.c: 138:   TMR2_SetInterruptHandler(TMR2_EvenHandler);
   1699     0057  30FD               	movlw	low _TMR2_EvenHandler
   1700     0058  0140               	movlb	0	; select bank0
   1701     0059  00A0               	movwf	TMR2_SetInterruptHandler@InterruptHandler
@@ -1718,19 +1718,19 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1704     005C  3182  22DC  3180   	fcall	_TMR2_SetInterruptHandler
   1705     005F                     l1574:
   1706                           
-  1707                           ;main.c: 141:   (INTCONbits.GIE = 1);
+  1707                           ;main.c: 144:   (INTCONbits.GIE = 1);
   1708     005F  178B               	bsf	11,7	;volatile
   1709     0060                     l1576:
   1710                           
-  1711                           ;main.c: 144:   (INTCONbits.PEIE = 1);
+  1711                           ;main.c: 147:   (INTCONbits.PEIE = 1);
   1712     0060  170B               	bsf	11,6	;volatile
   1713     0061                     l1578:
   1714                           
-  1715                           ;main.c: 151:   TMR2_StartTimer();
+  1715                           ;main.c: 154:   TMR2_StartTimer();
   1716     0061  3182  22F9  3180   	fcall	_TMR2_StartTimer
   1717     0064                     l1580:
   1718                           
-  1719                           ;main.c: 155:     if (PORTAbits.RA5 == 0) {
+  1719                           ;main.c: 158:     if (PORTAbits.RA5 == 0) {
   1720     0064  0140               	movlb	0	; select bank0
   1721     0065  1A8C               	btfsc	12,5	;volatile
   1722     0066  2868               	goto	u661
@@ -1740,20 +1740,20 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1726     0069                     u660:
   1727     0069                     l1582:
   1728                           
-  1729                           ;main.c: 156:       TMR2_WriteTimer(0);
+  1729                           ;main.c: 159:       TMR2_WriteTimer(0);
   1730     0069  3000               	movlw	0
   1731     006A  3182  22C3  3180   	fcall	_TMR2_WriteTimer
   1732                           
-  1733                           ;main.c: 157:     } else {
+  1733                           ;main.c: 160:     } else {
   1734     006D  2872               	goto	l1586
   1735     006E                     l1584:
   1736                           
-  1737                           ;main.c: 158:       TMR0_WriteTimer(0);
+  1737                           ;main.c: 161:       TMR0_WriteTimer(0);
   1738     006E  3000               	movlw	0
   1739     006F  3182  22D6  3180   	fcall	_TMR0_WriteTimer
   1740     0072                     l1586:
   1741                           
-  1742                           ;main.c: 161:     if (fpluseOK == 1) {
+  1742                           ;main.c: 164:     if (fpluseOK == 1) {
   1743     0072  0140               	movlb	0	; select bank0
   1744     0073  034C               	decf	_fpluseOK,w
   1745     0074  1D03               	btfss	3,2
@@ -1764,11 +1764,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1750     0078                     u670:
   1751     0078                     l1588:
   1752                           
-  1753                           ;main.c: 162:       fpluseOK = 0;
+  1753                           ;main.c: 165:       fpluseOK = 0;
   1754     0078  01CC               	clrf	_fpluseOK
   1755     0079                     l1590:
   1756                           
-  1757                           ;main.c: 163:       PWM_Frequent = 1000000UL / cycle_time;
+  1757                           ;main.c: 166:       PWM_Frequent = 1000000UL / cycle_time;
   1758     0079  0850               	movf	_cycle_time+3,w
   1759     007A  00AF               	movwf	___lldiv@divisor+3
   1760     007B  084F               	movf	_cycle_time+2,w
@@ -1797,7 +1797,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1783     0094  00BE               	movwf	_PWM_Frequent
   1784     0095                     l1592:
   1785                           
-  1786                           ;main.c: 164:       if ((PWM_Frequent > (190)) && (PWM_Frequent < (220))) {
+  1786                           ;main.c: 167:       if ((PWM_Frequent > (190)) && (PWM_Frequent < (220))) {
   1787     0095  0841               	movf	_PWM_Frequent+3,w
   1788     0096  1D03               	btfss	3,2
   1789     0097  28A4               	goto	u680
@@ -1836,7 +1836,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1822     00B4                     u690:
   1823     00B4                     l1596:
   1824                           
-  1825                           ;main.c: 165:         Duty_PERCENT = (uint32_t)(HI_time * 100UL) / cycle_time;
+  1825                           ;main.c: 168:         Duty_PERCENT = (uint32_t)(HI_time * 100UL) / cycle_time;
   1826     00B4  0140               	movlb	0	; select bank0
   1827     00B5  0850               	movf	_cycle_time+3,w
   1828     00B6  00AF               	movwf	___lldiv@divisor+3
@@ -1882,7 +1882,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1868     00E2  00BA               	movwf	_Duty_PERCENT
   1869     00E3                     l1598:
   1870                           
-  1871                           ;main.c: 166:         if (Duty_PERCENT >= (80)) {
+  1871                           ;main.c: 169:         if (Duty_PERCENT >= (80)) {
   1872     00E3  083D               	movf	_Duty_PERCENT+3,w
   1873     00E4  1D03               	btfss	3,2
   1874     00E5  28F2               	goto	u700
@@ -1901,22 +1901,22 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   1887     00F1  28F5               	goto	l375
   1888     00F2                     u700:
   1889     00F2                     l372:	
-  1890                           ;main.c: 167:           do { LATAbits.LATA4 = 1; } while(0);
+  1890                           ;main.c: 170:           do { LATAbits.LATA2 = 1; } while(0);
   1891                           
   1892     00F2  0140               	movlb	0	; select bank0
-  1893     00F3  1618               	bsf	24,4	;volatile
+  1893     00F3  1518               	bsf	24,2	;volatile
   1894     00F4  2864               	goto	l1580
   1895     00F5                     l375:	
-  1896                           ;main.c: 169:           do { LATAbits.LATA4 = 0; } while(0);
+  1896                           ;main.c: 172:           do { LATAbits.LATA2 = 0; } while(0);
   1897                           
   1898     00F5  0140               	movlb	0	; select bank0
-  1899     00F6  1218               	bcf	24,4	;volatile
+  1899     00F6  1118               	bcf	24,2	;volatile
   1900     00F7  2864               	goto	l1580
   1901     00F8                     l378:	
-  1902                           ;main.c: 173:         do { LATAbits.LATA4 = 0; } while(0);
+  1902                           ;main.c: 176:         do { LATAbits.LATA2 = 0; } while(0);
   1903                           
   1904     00F8  0140               	movlb	0	; select bank0
-  1905     00F9  1218               	bcf	24,4	;volatile
+  1905     00F9  1118               	bcf	24,2	;volatile
   1906     00FA  2864               	goto	l1580
   1907     00FB  2831               	ljmp	start
   1908     00FC                     __end_of_main:
@@ -3426,7 +3426,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3399     02FD                     __ptext22:	
   3400 ;; *************** function _TMR2_EvenHandler *****************
   3401 ;; Defined at:
-  3402 ;;		line 75 in file "main.c"
+  3402 ;;		line 78 in file "main.c"
   3403 ;; Parameters:    Size  Location     Type
   3404 ;;		None
   3405 ;; Auto vars:     Size  Location     Type
@@ -3460,14 +3460,14 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3433     02FD                     i1l330:	
   3434                           ;incstack = 0
   3435                           ; Regs used in _TMR2_EvenHandler: []
-  3436                           ;main.c: 76:   do { LATAbits.LATA2 = 1; } while(0);
+  3436                           ;main.c: 79:   do { LATAbits.LATA4 = 1; } while(0);
   3437                           
   3438     02FD  0140               	movlb	0	; select bank0
-  3439     02FE  1518               	bsf	24,2	;volatile
+  3439     02FE  1618               	bsf	24,4	;volatile
   3440     02FF                     i1l332:	
-  3441                           ;main.c: 77:   do { LATAbits.LATA4 = 1; } while(0);
+  3441                           ;main.c: 80:   do { LATAbits.LATA2 = 1; } while(0);
   3442                           
-  3443     02FF  1618               	bsf	24,4	;volatile
+  3443     02FF  1518               	bsf	24,2	;volatile
   3444     0300                     i1l334:
   3445     0300  0008               	return
   3446     0301                     __end_of_TMR2_EvenHandler:
@@ -3588,7 +3588,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3560     0301                     __ptext25:	
   3561 ;; *************** function _TMR0_EvenHandler *****************
   3562 ;; Defined at:
-  3563 ;;		line 69 in file "main.c"
+  3563 ;;		line 72 in file "main.c"
   3564 ;; Parameters:    Size  Location     Type
   3565 ;;		None
   3566 ;; Auto vars:     Size  Location     Type
@@ -3622,14 +3622,14 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3594     0301                     i1l323:	
   3595                           ;incstack = 0
   3596                           ; Regs used in _TMR0_EvenHandler: []
-  3597                           ;main.c: 70:   do { LATAbits.LATA2 = 0; } while(0);
+  3597                           ;main.c: 73:   do { LATAbits.LATA4 = 0; } while(0);
   3598                           
   3599     0301  0140               	movlb	0	; select bank0
-  3600     0302  1118               	bcf	24,2	;volatile
+  3600     0302  1218               	bcf	24,4	;volatile
   3601     0303                     i1l325:	
-  3602                           ;main.c: 71:   do { LATAbits.LATA4 = 0; } while(0);
+  3602                           ;main.c: 74:   do { LATAbits.LATA2 = 0; } while(0);
   3603                           
-  3604     0303  1218               	bcf	24,4	;volatile
+  3604     0303  1118               	bcf	24,2	;volatile
   3605     0304                     i1l327:
   3606     0304  0008               	return
   3607     0305                     __end_of_TMR0_EvenHandler:
@@ -3753,7 +3753,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3724     00FC                     __ptext28:	
   3725 ;; *************** function _CCP1_EvenCallBack *****************
   3726 ;; Defined at:
-  3727 ;;		line 81 in file "main.c"
+  3727 ;;		line 84 in file "main.c"
   3728 ;; Parameters:    Size  Location     Type
   3729 ;;  captured        2    1[COMMON] unsigned short 
   3730 ;; Auto vars:     Size  Location     Type
@@ -3790,10 +3790,10 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3761                           ; Regs used in _CCP1_EvenCallBack: [wreg+status,2+status,0+pclath+cstack]
   3762                           
   3763                           
-  3764                           ;main.c: 82:   static uint16_t pluse_width_LO = 0;;main.c: 83:   static uint16_t pluse_w
-      +                          idth_HI = 0;;main.c: 85:   static uint16_t HI_us = 0;;main.c: 86:   static uint16_t LO_u
-      +                          s = 0;;main.c: 87:   static uint16_t falling_edge_time = 0;;main.c: 88:   static uint16_
-      +                          t rising_edge_time = 0;;main.c: 89:   static _Bool rise_edge_flag = 0;;main.c: 92:   if 
+  3764                           ;main.c: 85:   static uint16_t pluse_width_LO = 0;;main.c: 86:   static uint16_t pluse_w
+      +                          idth_HI = 0;;main.c: 88:   static uint16_t HI_us = 0;;main.c: 89:   static uint16_t LO_u
+      +                          s = 0;;main.c: 90:   static uint16_t falling_edge_time = 0;;main.c: 91:   static uint16_
+      +                          t rising_edge_time = 0;;main.c: 92:   static _Bool rise_edge_flag = 0;;main.c: 95:   if 
       +                          (CCP1CON == 0x84) {
   3765     00FC  3084               	movlw	132
   3766     00FD  0146               	movlb	6	; select bank6
@@ -3806,18 +3806,18 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3773     0103                     u32_20:
   3774     0103                     i1l1304:
   3775                           
-  3776                           ;main.c: 93:     falling_edge_time = captured;
+  3776                           ;main.c: 96:     falling_edge_time = captured;
   3777     0103  0879               	movf	CCP1_EvenCallBack@captured+1,w
   3778     0104  00F3               	movwf	CCP1_EvenCallBack@falling_edge_time+1
   3779     0105  0878               	movf	CCP1_EvenCallBack@captured,w
   3780     0106  00F2               	movwf	CCP1_EvenCallBack@falling_edge_time
   3781                           
-  3782                           ;main.c: 94:     CCP1CON = 0x85;
+  3782                           ;main.c: 97:     CCP1CON = 0x85;
   3783     0107  3085               	movlw	133
   3784     0108  008E               	movwf	14	;volatile
   3785     0109                     i1l1306:
   3786                           
-  3787                           ;main.c: 95:     if (rise_edge_flag == 1) {
+  3787                           ;main.c: 98:     if (rise_edge_flag == 1) {
   3788     0109  0376               	decf	CCP1_EvenCallBack@rise_edge_flag,w
   3789     010A  1D03               	btfss	3,2
   3790     010B  290D               	goto	u33_21
@@ -3827,11 +3827,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3794     010E                     u33_20:
   3795     010E                     i1l1308:
   3796                           
-  3797                           ;main.c: 96:       rise_edge_flag = 0;
+  3797                           ;main.c: 99:       rise_edge_flag = 0;
   3798     010E  01F6               	clrf	CCP1_EvenCallBack@rise_edge_flag
   3799     010F                     i1l1310:
   3800                           
-  3801                           ;main.c: 98:       if (falling_edge_time >= rising_edge_time) {
+  3801                           ;main.c: 101:       if (falling_edge_time >= rising_edge_time) {
   3802     010F  0871               	movf	CCP1_EvenCallBack@rising_edge_time+1,w
   3803     0110  0273               	subwf	CCP1_EvenCallBack@falling_edge_time+1,w
   3804     0111  1D03               	skipz
@@ -3847,7 +3847,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3814     0119                     u34_20:
   3815     0119                     i1l1312:
   3816                           
-  3817                           ;main.c: 99:         pluse_width_HI = falling_edge_time - rising_edge_time;
+  3817                           ;main.c: 102:         pluse_width_HI = falling_edge_time - rising_edge_time;
   3818     0119  0870               	movf	CCP1_EvenCallBack@rising_edge_time,w
   3819     011A  0272               	subwf	CCP1_EvenCallBack@falling_edge_time,w
   3820     011B  0140               	movlb	0	; select bank0
@@ -3856,11 +3856,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3823     011E  3B73               	subwfb	CCP1_EvenCallBack@falling_edge_time+1,w
   3824     011F  00C7               	movwf	CCP1_EvenCallBack@pluse_width_HI+1
   3825                           
-  3826                           ;main.c: 100:       } else {
+  3826                           ;main.c: 103:       } else {
   3827     0120  292E               	goto	i1l354
   3828     0121                     i1l1314:
   3829                           
-  3830                           ;main.c: 101:         pluse_width_HI = (0xffff - rising_edge_time) + falling_edge_time;
+  3830                           ;main.c: 104:         pluse_width_HI = (0xffff - rising_edge_time) + falling_edge_time;
   3831     0121  0871               	movf	CCP1_EvenCallBack@rising_edge_time+1,w
   3832     0122  00FB               	movwf	??_CCP1_EvenCallBack+1
   3833     0123  0870               	movf	CCP1_EvenCallBack@rising_edge_time,w
@@ -3875,10 +3875,10 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3842     012C  3D7B               	addwfc	??_CCP1_EvenCallBack+1,w
   3843     012D  00C7               	movwf	CCP1_EvenCallBack@pluse_width_HI+1
   3844     012E                     i1l354:	
-  3845                           ;main.c: 102:       }
+  3845                           ;main.c: 105:       }
   3846                           
   3847                           
-  3848                           ;main.c: 103:       LO_us = (pluse_width_LO >> 3);
+  3848                           ;main.c: 106:       LO_us = (pluse_width_LO >> 3);
   3849     012E  0849               	movf	CCP1_EvenCallBack@pluse_width_LO+1,w
   3850     012F  00FB               	movwf	??_CCP1_EvenCallBack+1
   3851     0130  0848               	movf	CCP1_EvenCallBack@pluse_width_LO,w
@@ -3894,7 +3894,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3861     013A  087B               	movf	??_CCP1_EvenCallBack+1,w
   3862     013B  00C3               	movwf	CCP1_EvenCallBack@LO_us+1
   3863                           
-  3864                           ;main.c: 104:       HI_us = (pluse_width_HI >> 3);
+  3864                           ;main.c: 107:       HI_us = (pluse_width_HI >> 3);
   3865     013C  0847               	movf	CCP1_EvenCallBack@pluse_width_HI+1,w
   3866     013D  00FB               	movwf	??_CCP1_EvenCallBack+1
   3867     013E  0846               	movf	CCP1_EvenCallBack@pluse_width_HI,w
@@ -3910,7 +3910,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3877     0148  087B               	movf	??_CCP1_EvenCallBack+1,w
   3878     0149  00C5               	movwf	CCP1_EvenCallBack@HI_us+1
   3879                           
-  3880                           ;main.c: 105:       cycle_time = HI_us + LO_us;
+  3880                           ;main.c: 108:       cycle_time = HI_us + LO_us;
   3881     014A  0842               	movf	CCP1_EvenCallBack@LO_us,w
   3882     014B  0744               	addwf	CCP1_EvenCallBack@HI_us,w
   3883     014C  00CD               	movwf	_cycle_time
@@ -3921,14 +3921,14 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3888     0151  01D0               	clrf	_cycle_time+3
   3889     0152                     i1l1316:
   3890                           
-  3891                           ;main.c: 106:       HI_time = HI_us;
+  3891                           ;main.c: 109:       HI_time = HI_us;
   3892     0152  0845               	movf	CCP1_EvenCallBack@HI_us+1,w
   3893     0153  00CB               	movwf	_HI_time+1
   3894     0154  0844               	movf	CCP1_EvenCallBack@HI_us,w
   3895     0155  00CA               	movwf	_HI_time
   3896     0156                     i1l1318:
   3897                           
-  3898                           ;main.c: 107:       fpluseOK = 1;
+  3898                           ;main.c: 110:       fpluseOK = 1;
   3899     0156  01CC               	clrf	_fpluseOK
   3900     0157  0ACC               	incf	_fpluseOK,f
   3901     0158  298D               	goto	i1l361
@@ -3942,31 +3942,31 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3909     015E  298D               	goto	i1l361
   3910     015F                     u35_20:
   3911     015F                     i1l357:	
-  3912                           ;main.c: 113:     do { LATAbits.LATA2 = 1; } while(0);
+  3912                           ;main.c: 116:     do { LATAbits.LATA4 = 1; } while(0);
   3913                           
   3914     015F  0140               	movlb	0	; select bank0
-  3915     0160  1518               	bsf	24,2	;volatile
+  3915     0160  1618               	bsf	24,4	;volatile
   3916     0161                     i1l1322:
   3917                           
-  3918                           ;main.c: 114:     TMR0_WriteTimer(0);
+  3918                           ;main.c: 117:     TMR0_WriteTimer(0);
   3919     0161  3000               	movlw	0
   3920     0162  3182  22F4  3180   	fcall	i1_TMR0_WriteTimer
   3921     0165                     i1l1324:
   3922                           
-  3923                           ;main.c: 115:     rising_edge_time = captured;
+  3923                           ;main.c: 118:     rising_edge_time = captured;
   3924     0165  0879               	movf	CCP1_EvenCallBack@captured+1,w
   3925     0166  00F1               	movwf	CCP1_EvenCallBack@rising_edge_time+1
   3926     0167  0878               	movf	CCP1_EvenCallBack@captured,w
   3927     0168  00F0               	movwf	CCP1_EvenCallBack@rising_edge_time
   3928     0169                     i1l1326:
   3929                           
-  3930                           ;main.c: 116:     CCP1CON = 0x84;
+  3930                           ;main.c: 119:     CCP1CON = 0x84;
   3931     0169  3084               	movlw	132
   3932     016A  0146               	movlb	6	; select bank6
   3933     016B  008E               	movwf	14	;volatile
   3934     016C                     i1l1328:
   3935                           
-  3936                           ;main.c: 118:     if (rising_edge_time >= falling_edge_time) {
+  3936                           ;main.c: 121:     if (rising_edge_time >= falling_edge_time) {
   3937     016C  0873               	movf	CCP1_EvenCallBack@falling_edge_time+1,w
   3938     016D  0271               	subwf	CCP1_EvenCallBack@rising_edge_time+1,w
   3939     016E  1D03               	skipz
@@ -3982,7 +3982,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3949     0176                     u36_20:
   3950     0176                     i1l1330:
   3951                           
-  3952                           ;main.c: 119:       pluse_width_LO = rising_edge_time - falling_edge_time;
+  3952                           ;main.c: 122:       pluse_width_LO = rising_edge_time - falling_edge_time;
   3953     0176  0872               	movf	CCP1_EvenCallBack@falling_edge_time,w
   3954     0177  0270               	subwf	CCP1_EvenCallBack@rising_edge_time,w
   3955     0178  0140               	movlb	0	; select bank0
@@ -3991,11 +3991,11 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3958     017B  3B71               	subwfb	CCP1_EvenCallBack@rising_edge_time+1,w
   3959     017C  00C9               	movwf	CCP1_EvenCallBack@pluse_width_LO+1
   3960                           
-  3961                           ;main.c: 120:     } else {
+  3961                           ;main.c: 123:     } else {
   3962     017D  298B               	goto	i1l1334
   3963     017E                     i1l1332:
   3964                           
-  3965                           ;main.c: 121:       pluse_width_LO = (0xffff - falling_edge_time) + rising_edge_time;
+  3965                           ;main.c: 124:       pluse_width_LO = (0xffff - falling_edge_time) + rising_edge_time;
   3966     017E  0873               	movf	CCP1_EvenCallBack@falling_edge_time+1,w
   3967     017F  00FB               	movwf	??_CCP1_EvenCallBack+1
   3968     0180  0872               	movf	CCP1_EvenCallBack@falling_edge_time,w
@@ -4011,7 +4011,7 @@ Microchip MPLAB XC8 C Compiler v2.46 (Free license) build 20240104201356 Og1
   3978     018A  00C9               	movwf	CCP1_EvenCallBack@pluse_width_LO+1
   3979     018B                     i1l1334:
   3980                           
-  3981                           ;main.c: 123:     rise_edge_flag = 1;
+  3981                           ;main.c: 126:     rise_edge_flag = 1;
   3982     018B  01F6               	clrf	CCP1_EvenCallBack@rise_edge_flag
   3983     018C  0AF6               	incf	CCP1_EvenCallBack@rise_edge_flag,f
   3984     018D                     i1l361:
@@ -4515,7 +4515,7 @@ SFR63                0      0       0      64        0.0%
 
 
 Microchip Technology PIC Macro Assembler V2.46 build 20240104201356 
-Symbol Table                                                                                   Fri Jul 04 13:15:09 2025
+Symbol Table                                                                                   Mon Jul 14 14:18:59 2025
 
         __end_of_TMR2_SetInterruptHandler 02E2                                        l31 030A  
                                       l25 0249                                        l50 02A4  
